@@ -6,11 +6,17 @@ A communication design project organized into five distinct stories, each explor
 
 ```text
 Kommunikasjonsdesign/
-├── Story1/          # First design story
-├── Story2/          # Second design story
-├── Story3/          # Third design story
-├── Story4/          # Fourth design story
-└── Story5/          # Fifth design story
+├── Story1/              # Julian Assange storytelling article
+│   ├── index.html       # Complete story webpage
+│   ├── css/
+│   │   └── style.css    # Optimized stylesheet
+│   └── assets/
+│       └── img/
+│           └── AssangeWide.png
+├── Story2/              # Second design story
+├── Story3/              # Third design story
+├── Story4/              # Fourth design story
+└── Story5/              # Fifth design story
 ```
 
 ## About
@@ -19,9 +25,11 @@ This project is part of the H2025 curriculum and focuses on communication design
 
 ## Stories Overview
 
-### Story 1
+### Story 1 - Julian Assanges historie
 
-Description to be added
+> Fra hackermiljø til global varsler
+
+A comprehensive storytelling article exploring the controversial life of WikiLeaks founder Julian Assange. The story traces his journey from early hacking days in Australia to becoming one of the world's most polarizing figures in journalism and transparency activism.
 
 ### Story 2
 
