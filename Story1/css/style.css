@@ -78,12 +78,12 @@ main {
   padding: 20px;
   background: white;
 }
-
-picture img {
+figure, img, figcaption  {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 20px 0;
+  color: #555;
 }
 
 footer {
