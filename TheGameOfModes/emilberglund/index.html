@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- PHOTO -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Game of Modes</title>
+<link rel="stylesheet" href="stil.css">
+</head>
+
+<body>
+    <header>
+        <h1>The Game of Modes</h1>
+        <p>
+            This webpage demonstrates the storytelling <strong>modes</strong> from our
+            lectures. Each section both <em>uses</em> the mode and
+            <em>explains</em> how it was implemented. Together, these modes create the
+            toolbox of digital storytelling.
+        </p>
+    </header>
+
+    <aside id="author-info">
+        <div id="author-details">
+            <img src="assets/img/EmilBerglundGPT.png" alt="Forfatter profilbilde" class="profile-pic">
+            <p><strong>Skrevet av:</strong> Emil Berglund</p>
+            <p><strong>Publisert:</strong> 25. september 2025</p>
+        </div>
+    </aside>
+
+    <main>
+        <!-- TEXT -->
+        <div class="mode">
+            <h2>Text</h2>
+            <p>
+                Example story hook: <em>“The door had just been kicked in. Police
+                    outside shouted the word that would define the night: 'Knife!'”</em>
+            </p>
+            <p>
+                <strong>Implementation:</strong> Text is the foundation, added simply in
+                <code>&lt;p&gt;</code> tags.
+            </p>
+        </div>
+
+        <!-- PHOTO -->
+        <section class="mode">
+            <h2>Photo</h2>
+            <img src="https://picsum.photos/700/350" alt="Random illustrative photo" />
+            <p>
+                <strong>Implementation:</strong> Added with the <code>&lt;img&gt;</code>
+                tag. The photo helps situate the story visually. The image is dynamically
+                fetched from <a href="https://picsum.photos/">Picsum Photos</a>.
+            </p>
+        </section>
+
+        <!-- AUDIO -->
+        <section class="mode">
+            <h2>Audio</h2>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+            </audio>
+            <p>
+                <strong>Implementation:</strong> Embedded with
+                <code>&lt;audio&gt;</code>. Audio can add ambience or convey emotion
+                through recorded voices.
+            </p>
+        </section>
+
+        <!-- VIDEO -->
+        <section class="mode">
+            <h2>Video</h2>
+            <video controls width="100%">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                Your browser does not support video.
+            </video>
+            <p>
+                <strong>Implementation:</strong> Inline video via
+                <code>&lt;video&gt;</code>. It provides movement and context for the
+                context for the scene.
+                Source: <a href="https://www.w3schools.com/html/html5_video.asp" target="_blank"
+                    rel="noopener noreferrer">W3Schools — HTML5 Video</a>.
+            </p>
+            </p>
+        </section>
+
+        <!-- MAP -->
+        <section class="mode">
+            <h2>Map</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15483.85562368875!2d11.360893!3d59.124838100000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sno!2sno!4v1758791476252!5m2!1sno!2sno"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>
+                <strong>Implementation:</strong> Embedded with a Google Maps iframe.
+                Maps anchor the story in a specific location.
+            </p>
+        </section>
+
+        <!-- TIMELINE -->
+        <section class="mode">
+            <h2>Timeline</h2>
+            <ul>
+                <li>19:00 — Michelsen calls ER</li>
+                <li>20:30 — Fire alarm starts</li>
+                <li>21:00 — Police arrive</li>
+                <li>21:12 — Three shots fired</li>
+            </ul>
+            <p>
+                <strong>Implementation:</strong> Ordered events are presented as an HTML
+                list to show sequence over time.
+            </p>
+        </section>
+
+        <!-- DATA -->
+        <section class="mode">
+            <h2>Data</h2>
+            <pre>
+{
+  "year": 2019,
+  "police_killings": 6,
+  "city": "Bergen"
+}
+        </pre>
+            <p>
+                <strong>Implementation:</strong> Displayed raw data inside a
+                <code>&lt;pre&gt;</code> block to preserve structure and formatting.
+            </p>
+        </section>
+
+        <!-- CHART -->
+        <section class="mode">
+            <h2>Chart</h2>
+            <img src="https://quickchart.io/chart?c={type:'bar',data:{labels:['2019','2020','2021','2022','2023','2024'],datasets:[{label:'Police killings',data:[2,1,0,3,5,4]}]}}"
+                alt="Bar chart example" />
+            <p>
+                <strong>Implementation:</strong> Generated via QuickChart API and
+                embedded as an image to visualize numerical data.
+            </p>
+            <p>
+                <em><strong>Note:</strong> The data shown in this chart is fictional and for demonstration purposes only. It does not represent actual statistics.</em>
+            </p>
+        </section>
+
+        <!-- INFOVIZ -->
+        <section class="mode">
+            <h2>Infoviz</h2>
+            <img src="https://quickchart.io/chart?c={type:'pie',data:{labels:['Mobile','Desktop','Tablet'],datasets:[{data:[60,30,10]}]}}"
+                alt="Infographic: Device usage share" />
+            <p>
+                <strong>Implementation:</strong> This infographic was generated dynamically
+                with QuickChart.io. Infoviz condenses numbers into a visual form, making it
+                instantly more understandable.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Emil Berglund</p>
+        <p><em>This article is part of the assignment "The Game of Modes" in the course "Communication Design".</em></p>
+    </footer>
+</body>
+
+</html>
