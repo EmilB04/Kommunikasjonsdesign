@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Emil Berglund">
     <title>The Game of Modes</title>
     <link rel="stylesheet" href="stil.css">
 </head>
@@ -64,7 +65,13 @@
                 <div class="mode-explanation">
                     <div class="explanation-card">
                         <h3>Implementation</h3>
-                        <p>Text is the foundation of HTML and is added simply with <code>&lt;p&gt;</code> tags.</p>
+                        <p><strong>Current method:</strong> Using a <code>&lt;blockquote&gt;</code> element with CSS styling for dramatic effect.</p>
+                        <p><strong>Alternatives:</strong></p>
+                        <ul>
+                            <li><code>&lt;p&gt;</code> tags for regular paragraphs</li>
+                            <li><code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> for emphasis</li>
+                            <li><code>&lt;mark&gt;</code> for highlighting key phrases</li>
+                        </ul>
                     </div>
                     <div class="explanation-card">
                         <h3>Why it's used</h3>
@@ -97,8 +104,13 @@
                 <div class="mode-explanation">
                     <div class="explanation-card">
                         <h3>Implementation</h3>
-                        <p>Added with the <code>&lt;img&gt;</code> tag. Images are dynamically fetched from <a
-                                href="https://picsum.photos/">Picsum Photos</a>.</p>
+                        <p><strong>Current method:</strong> Standard <code>&lt;img&gt;</code> element with overlay text using CSS positioning.</p>
+                        <p><strong>Alternatives:</strong></p>
+                        <ul>
+                            <li><code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> for semantic structure</li>
+                            <li><code>&lt;picture&gt;</code> element for responsive images</li>
+                            <li>CSS <code>background-image</code> with overlay text</li>
+                        </ul>
                     </div>
                     <div class="explanation-card">
                         <h3>Why it's used</h3>
@@ -137,8 +149,12 @@
                 <div class="mode-explanation">
                     <div class="explanation-card">
                         <h3>Implementation</h3>
-                        <p>Embedded with <code>&lt;audio&gt;</code>. Audio adds ambience and conveys emotion through
-                            recorded voices.</p>
+                        <p><strong>Current method:</strong> HTML5 <code>&lt;audio&gt;</code> element with custom CSS visualizer animation.</p>
+                        <p><strong>Alternatives:</strong></p>
+                        <ul>
+                            <li>Web Audio API for advanced audio manipulation</li>
+                            <li>Embedded players (Spotify, SoundCloud, Apple Music)</li>
+                        </ul>
                     </div>
                     <div class="explanation-card">
                         <h3>Why it's used</h3>
@@ -172,8 +188,12 @@
                 <div class="mode-explanation">
                     <div class="explanation-card">
                         <h3>Implementation</h3>
-                        <p>Inline video via <code>&lt;video&gt;</code>. Provides movement and context. Source: <a
-                                href="https://www.w3schools.com/html/html5_video.asp" target="_blank">W3Schools</a>.</p>
+                        <p><strong>Current method:</strong> HTML5 <code>&lt;video&gt;</code> element with native controls in a responsive container.</p>
+                        <p><strong>Alternatives:</strong></p>
+                        <ul>
+                            <li>YouTube/Vimeo embeds with <code>&lt;iframe&gt;</code></li>
+                            <li>Custom video players (Video.js, Plyr)</li>
+                        </ul>
                     </div>
                     <div class="explanation-card">
                         <h3>Why it's used</h3>
@@ -206,8 +226,12 @@
                 <div class="mode-explanation">
                     <div class="explanation-card">
                         <h3>Implementation</h3>
-                        <p>Embedded with Google Maps <code>&lt;video&gt;</code>. Maps anchor stories in specific locations and provide
-                            geographic context.</p>
+                        <p><strong>Current method:</strong> Google Maps embedded via <code>&lt;iframe&gt;</code> with custom styling and responsive design.</p>
+                        <p><strong>Alternatives:</strong></p>
+                        <ul>
+                            <li>OpenStreetMap for open-source mapping</li>
+                            <li>Static map images with clickable regions</li>
+                        </ul>
                     </div>
                     <div class="explanation-card">
                         <h3>Why it's used</h3>
@@ -265,8 +289,16 @@
                 <div class="mode-explanation">
                     <div class="explanation-card">
                         <h3>Implementation</h3>
-                        <p>Ordered events presented as structured timeline to show sequence over time with visual
-                            progression.</p>
+                        <p><strong>Current method:</strong> CSS-styled vertical timeline with flexbox layout and custom markers for chronological events.</p>
+                        <p><strong>Alternatives:</strong></p>
+                        <ul>
+                            <li>JavaScript libraries like Timeline.js or Vis.js</li>
+                            <li>Horizontal scrolling timelines</li>
+                            <li>Interactive timelines with zoom functionality</li>
+                            <li>Animated timelines with CSS transitions</li>
+                            <li>Calendar-based event displays</li>
+                            <li>Multimedia timelines with embedded content</li>
+                        </ul>
                     </div>
                     <div class="explanation-card">
                         <h3>Why it's used</h3>
@@ -311,8 +343,13 @@
                 <div class="mode-explanation">
                     <div class="explanation-card">
                         <h3>Implementation</h3>
-                        <p>Raw data displayed in <code>&lt;pre&gt;</code> blocks to preserve structure and formatting
-                            for transparency.</p>
+                        <p><strong>Current method:</strong> Styled <code>&lt;pre&gt;</code> block with custom JSON syntax highlighting using CSS classes in a terminal-like interface.</p>
+                        <p><strong>Alternatives:</strong></p>
+                        <ul>
+                            <li>Data tables with <code>&lt;table&gt;</code> elements and sorting</li>
+                            <li>CSV data displays with filtering and search</li>
+                            <li>API endpoints with live data fetching</li>
+                        </ul>
                     </div>
                     <div class="explanation-card">
                         <h3>Why it's used</h3>
@@ -350,8 +387,14 @@
                 <div class="mode-explanation">
                     <div class="explanation-card">
                         <h3>Implementation</h3>
-                        <p>Generated via QuickChart API and embedded as responsive images to visualize complex numerical
-                            relationships.</p>
+                        <p><strong>Current method:</strong> External QuickChart.io API generating bar chart images dynamically with URL parameters and custom legend.</p>
+                        <p><strong>Alternatives:</strong></p>
+                        <ul>
+                            <li>JavaScript charting libraries (Chart.js, D3.js, Recharts)</li>
+                            <li>Google Charts API integration</li>
+                            <li>CSS-only bar charts and progress indicators</li>
+                            <li>Embedded charts from Excel or Google Sheets</li>
+                        </ul>
                     </div>
                     <div class="explanation-card">
                         <h3>Why it's used</h3>
@@ -399,8 +442,13 @@
                 <div class="mode-explanation">
                     <div class="explanation-card">
                         <h3>Implementation</h3>
-                        <p>Generated dynamically with QuickChart.io. Infoviz condenses complex numbers into instantly
-                            understandable visual forms.</p>
+                        <p><strong>Current method:</strong> Combination of QuickChart.io doughnut chart with custom HTML statistics grid for data display.</p>
+                        <p><strong>Alternatives:</strong></p>
+                        <ul>
+                            <li>Custom infographic design with CSS Grid/Flexbox</li>
+                            <li>Animated SVG infographics</li>
+                            <li>Progressive data reveal with JavaScript</li>
+                        </ul>
                     </div>
                     <div class="explanation-card">
                         <h3>Why it's used</h3>
@@ -413,16 +461,17 @@
                             through universal visual language.</p>
                     </div>
                 </div>
+                <p class="disclaimer"><em><strong>Note:</strong> Data shown is fictional for demonstration purposes
+                        only.</em></p>
             </div>
         </section>
+        <footer class="footer">
+            <p>&copy; 2025 Emil Berglund.</p>
+            <p class="footer-assignment-note">This article is part of the assignment "The Game of Modes" in the course
+                "Communication Design".</p>
+        </footer>
     </main>
-
-    <footer class="footer">
-        <p>&copy; 2025 Emil Berglund.</p>
-        <p class="footer-assignment-note">This article is part of the assignment "The Game of Modes" in the course
-            "Communication Design".</p>
-    </footer>
-
+                
     <!-- Back to Top Button -->
     <button class="back-to-top" id="backToTop" aria-label="Back to top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
