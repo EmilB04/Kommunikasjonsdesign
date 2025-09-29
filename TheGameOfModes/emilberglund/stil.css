@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap");
 
-/* CSS Variables for consistency */
+/* ===== CSS VARIABLES & DESIGN TOKENS ===== */
 :root {
+    /* Colors */
     --primary-color: #1a1a1a;
     --secondary-color: #2d2d2d;
     --accent-blue: #3B82F6;
@@ -9,25 +10,39 @@
     --accent-orange: #F59E0B;
     --accent-red: #EF4444;
     --accent-purple: #8B5CF6;
+    
+    /* Text Colors */
     --text-primary: #ffffff;
     --text-secondary: #b4b4b4;
     --text-muted: #888;
+    
+    /* Background & UI */
     --card-bg: rgba(45, 45, 45, 0.8);
     --border-color: rgba(255, 255, 255, 0.1);
+    
+    /* Gradients */
     --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    
+    /* Shadows */
     --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.15);
     --shadow-strong: 0 10px 40px rgba(0, 0, 0, 0.3);
+    
+    /* Layout */
     --border-radius: 12px;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Global Styles */
+/* ===== GLOBAL RESET & BASE STYLES ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -105,7 +120,7 @@ body {
     color: var(--text-primary);
 }
 
-/* Hero Section */
+/* ===== HERO HEADER SECTION ===== */
 .hero-header {
     padding: 120px 2rem 80px;
     text-align: center;
@@ -132,14 +147,6 @@ body {
     z-index: -1;
 }
 
-.hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    z-index: 1;
-}
-
 .hero-header h1 {
     font-size: clamp(2.5rem, 6vw, 5rem);
     font-weight: 800;
@@ -151,6 +158,16 @@ body {
     line-height: 1.2;
 }
 
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    z-index: 1;
+    position: relative;
+    max-width: 800px;
+}
+
 .hero-subtitle {
     font-size: 1.25rem;
     color: var(--text-secondary);
@@ -158,6 +175,7 @@ body {
     margin-bottom: 2rem;
     line-height: 1.6;
 }
+
 .hero-instruction {
     font-size: 1.1rem;
     color: var(--text-secondary);
@@ -167,6 +185,7 @@ body {
     line-height: 1.5;
 }
 
+/* ===== MODE NAVIGATION ===== */
 .mode-navigation {
     display: flex;
     gap: 1rem;
@@ -190,8 +209,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* Removed unused .hero section (using .hero-header instead) */
-
+/* ===== CALL TO ACTION BUTTON ===== */
 .cta-button {
     display: inline-flex;
     align-items: center;
@@ -284,10 +302,10 @@ body {
 .publish-date {
     color: var(--text-muted);
     font-size: 0.9rem;
-    margin: 0;
+    margin: 0.5rem 0 0 0;
 }
 
-/* Mode Sections */
+/* ===== MODE SECTIONS ===== */
 .mode {
     padding: 100px 2rem;
     margin: 0 auto;
@@ -295,6 +313,7 @@ body {
     position: relative;
 }
 
+/* Alternating backgrounds for visual separation */
 .mode:nth-child(odd) {
     background: linear-gradient(90deg, transparent 0%, rgba(59, 130, 246, 0.05) 50%, transparent 100%);
 }
@@ -303,6 +322,7 @@ body {
     background: linear-gradient(90deg, transparent 0%, rgba(16, 185, 129, 0.05) 50%, transparent 100%);
 }
 
+/* Mode Header */
 .mode-header {
     display: flex;
     align-items: center;
@@ -328,6 +348,7 @@ body {
     color: var(--text-primary);
 }
 
+/* Mode Content Layout */
 .mode-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -335,7 +356,7 @@ body {
     align-items: start;
 }
 
-/* Demo Areas */
+/* ===== DEMO AREAS - SHARED STYLES ===== */
 .text-demo, .photo-demo, .audio-demo, .video-demo, .map-demo, .timeline-demo,
 .data-demo, .chart-demo, .infoviz-demo {
     background: var(--card-bg);
@@ -346,10 +367,12 @@ body {
     transition: var(--transition);
 }
 
+/* Photo demo needs special padding */
 .photo-demo {
     padding: 1rem 1rem 0.5rem 1rem !important;
 }
 
+/* Hover effects for all demo areas */
 .text-demo:hover, .photo-demo:hover, .audio-demo:hover, .video-demo:hover,
 .map-demo:hover, .timeline-demo:hover, .data-demo:hover, .chart-demo:hover,
 .infoviz-demo:hover {
@@ -357,7 +380,7 @@ body {
     box-shadow: var(--shadow-strong);
 }
 
-/* Text Demo Styles */
+/* ===== TEXT MODE DEMO ===== */
 .text-content {
     font-size: 1.1rem;
     line-height: 1.8;
@@ -512,7 +535,7 @@ body {
 .timeline-item {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.2rem;
     margin-bottom: 1.5rem;
     position: relative;
 }
@@ -896,7 +919,7 @@ body {
     }
 }
 
-/* Animations */
+/* ===== ANIMATIONS & KEYFRAMES ===== */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -912,7 +935,8 @@ body {
     animation: fadeInUp 0.6s ease-out forwards;
 }
 
-/* Smooth scroll behavior */
+/* ===== UTILITY & GLOBAL STYLES ===== */
+/* Smooth scrolling */
 html {
     scroll-behavior: smooth;
 }
@@ -931,7 +955,7 @@ html {
     outline-offset: 2px;
 }
 
-/* Footer Styles */
+/* ===== FOOTER SECTION ===== */
 .footer {
     background: linear-gradient(135deg, rgba(26, 26, 26, 0.95) 0%, rgba(45, 45, 45, 0.95) 100%);
     border-top: 1px solid rgba(59, 130, 246, 0.2);
@@ -966,10 +990,60 @@ html {
     color: var(--text-muted);
 }
 
-/* Removed unused .footer-link class */
-/* Print styles */
+/* ===== BACK TO TOP BUTTON ===== */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-1);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    box-shadow: var(--shadow-strong);
+    transition: var(--transition);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Back to Top Button States */
+.back-to-top:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 45px rgba(59, 130, 246, 0.4);
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.back-to-top:active {
+    transform: translateY(0);
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Back to Top Button SVG */
+.back-to-top svg {
+    width: 24px;
+    height: 24px;
+    transition: var(--transition);
+}
+
+.back-to-top:hover svg {
+    transform: translateY(-2px);
+}
+
+/* ===== PRINT STYLES ===== */
 @media print {
-    .footer {
+    .footer, .back-to-top {
         display: none;
     }
     

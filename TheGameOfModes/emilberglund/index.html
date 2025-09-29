@@ -206,7 +206,7 @@
                 <div class="mode-explanation">
                     <div class="explanation-card">
                         <h3>Implementation</h3>
-                        <p>Embedded with Google Maps iframe. Maps anchor stories in specific locations and provide
+                        <p>Embedded with Google Maps <code>&lt;video&gt;</code>. Maps anchor stories in specific locations and provide
                             geographic context.</p>
                     </div>
                     <div class="explanation-card">
@@ -378,7 +378,7 @@
             <div class="mode-content">
                 <div class="infoviz-demo">
                     <div class="infographic-container">
-                        <img src="https://quickchart.io/chart?c={type:'doughnut',data:{labels:['Mobile','Desktop','Tablet'],datasets:[{data:[60,30,10],backgroundColor:['#3B82F6','#10B981','#F59E0B'],borderWidth:0,cutout:'60%'}]},options:{responsive:true,plugins:{legend:{position:'bottom',labels:{usePointStyle:true,padding:20}}}}}"
+                        <img src="https://quickchart.io/chart?c={type:'pie',data:{labels:['Mobile','Desktop','Tablet'],datasets:[{data:[60,30,10]}]}}"
                             alt="Device usage distribution infographic" class="infographic-image" />
                         <div class="infographic-stats">
                             <div class="stat-item">
@@ -422,6 +422,35 @@
         <p class="footer-assignment-note">This article is part of the assignment "The Game of Modes" in the course
             "Communication Design".</p>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 14L12 9L17 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <script>
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('backToTop');
+        
+        // Show/hide button based on scroll position
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+        
+        // Smooth scroll to top when clicked
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 
 </html>
