@@ -1,158 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- PHOTO -->
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The Game of Modes</title>
-<link rel="stylesheet" href="stil.css">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Game of Modes</title>
+    <link rel="stylesheet" href="stil.css">
 </head>
 
 <body>
-    <header>
-        <h1>The Game of Modes</h1>
-        <p>
-            This webpage demonstrates the storytelling <strong>modes</strong> from our
-            lectures. Each section both <em>uses</em> the mode and
-            <em>explains</em> how it was implemented. Together, these modes create the
-            toolbox of digital storytelling.
-        </p>
+    <header class="hero-header">
+        <div class="hero-content">
+            <h1>The Game of Modes</h1>
+            <p class="hero-subtitle">
+                This webpage demonstrates the storytelling <strong>modes</strong> from our
+                lectures. Each section both <em>uses</em> the mode and
+                <em>explains</em> how it was implemented. Together, these modes create the
+                toolbox of digital storytelling.
+            </p>
+            <p class="hero-instruction">
+                Choose one of the modes below to explore its unique storytelling capabilities, or scroll down to explore
+                them all.
+            </p>
+            <nav class="mode-navigation">
+                <a href="#text-mode" class="nav-link">Text</a>
+                <a href="#photo-mode" class="nav-link">Photo</a>
+                <a href="#audio-mode" class="nav-link">Audio</a>
+                <a href="#video-mode" class="nav-link">Video</a>
+                <a href="#map-mode" class="nav-link">Map</a>
+                <a href="#timeline-mode" class="nav-link">Timeline</a>
+                <a href="#data-mode" class="nav-link">Data</a>
+                <a href="#chart-mode" class="nav-link">Chart</a>
+                <a href="#infoviz-mode" class="nav-link">Infoviz</a>
+            </nav>
+        </div>
     </header>
 
-    <section id="author-details">
-        <img src="assets/img/EmilBerglundGPT.png" alt="Forfatter profilbilde" class="profile-pic">
-        <p><strong>Skrevet av:</strong> Emil Berglund</p>
-        <p><strong>Publisert:</strong> 25. september 2025</p>
+    <section class="author-showcase">
+        <div class="author-card">
+            <img src="assets/img/EmilBerglundGPT.png" alt="Emil Berglund" class="author-avatar">
+            <div class="author-info">
+                <p class="author-name"><strong>Written by: Emil Berglund</strong></p>
+                <p class="publish-date" style="margin-top: -10px !important;">With some style improvements from Claude Sonnet 4</p>
+                <p class="publish-date">Published: September 29, 2025</p>
+            </div>
+        </div>
     </section>
 
     <main>
-        <!-- TEXT -->
-        <div class="mode">
-            <h2>Text</h2>
-            <p>
-                Example story hook: <em>“The door had just been kicked in. Police
-                    outside shouted the word that would define the night: 'Knife!'”</em>
-            </p>
-            <p>
-                <strong>Implementation:</strong> Text is the foundation of HTML and is added simply with
-                <code>&lt;p&gt;</code> tags.
-            </p>
-        </div>
-
-        <!-- PHOTO -->
-        <section class="mode">
-            <h2>Photo</h2>
-            <img src="https://picsum.photos/700/350" alt="Random illustrative photo" />
-            <p>
-                <strong>Implementation:</strong> Added with the <code>&lt;img&gt;</code>
-                tag. The photo helps situate the story visually. The image is dynamically
-                fetched from <a href="https://picsum.photos/">Picsum Photos</a>.
-            </p>
+        <!-- TEXT MODE -->
+        <section id="text-mode" class="mode text-showcase">
+            <div class="mode-header">
+                <span class="mode-number">01</span>
+                <h2>Text</h2>
+            </div>
+            <div class="mode-content">
+                <div class="text-demo">
+                    <blockquote class="story-hook">
+                        "The door had just been kicked in. Police outside shouted the word that would define the night:
+                        'Knife!'"
+                    </blockquote>
+                </div>
+                <div class="mode-explanation">
+                    <div class="explanation-card">
+                        <h3>Implementation</h3>
+                        <p>Text is the foundation of HTML and is added simply with <code>&lt;p&gt;</code> tags.</p>
+                    </div>
+                    <div class="explanation-card">
+                        <h3>Why it's used</h3>
+                        <p>Text remains the most versatile and accessible storytelling medium. It allows for precise
+                            control of narrative pacing, complex ideas, and emotional nuance.</p>
+                    </div>
+                    <div class="explanation-card">
+                        <h3>Effect on reader</h3>
+                        <p>Creates mental imagery and allows readers to consume at their own pace. The example uses
+                            dramatic present tense and specific details to create immediate tension.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- AUDIO -->
-        <section class="mode">
-            <h2>Audio</h2>
-            <audio controls>
-                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
-                Your browser does not support the audio element.
-            </audio>
-            <p>
-                <strong>Implementation:</strong> Embedded with
-                <code>&lt;audio&gt;</code>. Audio can add ambience or convey emotion
-                through recorded voices.
-            </p>
+        <!-- PHOTO MODE -->
+        <section id="photo-mode" class="mode photo-showcase">
+            <div class="mode-header">
+                <span class="mode-number">02</span>
+                <h2>Photo</h2>
+            </div>
+            <div class="mode-content">
+                <div class="photo-demo">
+                    <img src="https://picsum.photos/1200/600" alt="Immersive storytelling photo"
+                        class="showcase-image" />
+                    <div class="image-overlay">
+                        <p class="image-caption">A picture tells a thousand words</p>
+                    </div>
+                </div>
+                <div class="mode-explanation">
+                    <div class="explanation-card">
+                        <h3>Implementation</h3>
+                        <p>Added with the <code>&lt;img&gt;</code> tag. Images are dynamically fetched from <a
+                                href="https://picsum.photos/">Picsum Photos</a>.</p>
+                    </div>
+                    <div class="explanation-card">
+                        <h3>Why it's used</h3>
+                        <p>Photos provide immediate visual context and emotional connection. They establish credibility
+                            and help readers visualize unfamiliar situations.</p>
+                    </div>
+                    <div class="explanation-card">
+                        <h3>Effect on reader</h3>
+                        <p>Creates instant emotional response and improves comprehension. A well-chosen photo conveys
+                            mood, atmosphere, and information simultaneously.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- VIDEO -->
-        <section class="mode">
-            <h2>Video</h2>
-            <video controls width="100%">
-                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-                Your browser does not support video.
-            </video>
-            <p>
-                <strong>Implementation:</strong> Inline video via
-                <code>&lt;video&gt;</code>. It provides movement and context for the
-                context for the scene.
-                Source: <a href="https://www.w3schools.com/html/html5_video.asp" target="_blank"
-                    rel="noopener noreferrer">W3Schools — HTML5 Video</a>.
-            </p>
-            </p>
+        <!-- AUDIO MODE -->
+        <section id="audio-mode" class="mode audio-showcase">
+            <div class="mode-header">
+                <span class="mode-number">03</span>
+                <h2>Audio</h2>
+            </div>
+            <div class="mode-content">
+                <div class="audio-demo">
+                    <div class="audio-visualizer">
+                        <div class="sound-wave"></div>
+                        <div class="sound-wave"></div>
+                        <div class="sound-wave"></div>
+                        <div class="sound-wave"></div>
+                        <div class="sound-wave"></div>
+                    </div>
+                    <audio controls class="audio-player">
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="mode-explanation">
+                    <div class="explanation-card">
+                        <h3>Implementation</h3>
+                        <p>Embedded with <code>&lt;audio&gt;</code>. Audio adds ambience and conveys emotion through
+                            recorded voices.</p>
+                    </div>
+                    <div class="explanation-card">
+                        <h3>Why it's used</h3>
+                        <p>Audio engages our most emotional sense and adds temporal dimension. Perfect for authentic
+                            voices and atmospheric storytelling.</p>
+                    </div>
+                    <div class="explanation-card">
+                        <h3>Effect on reader</h3>
+                        <p>Creates immersive atmosphere and builds empathy. Makes listeners feel present at events
+                            through authentic audio experiences.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- MAP -->
-        <section class="mode">
-            <h2>Map</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15483.85562368875!2d11.360893!3d59.124838100000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sno!2sno!4v1758791476252!5m2!1sno!2sno"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p>
-                <strong>Implementation:</strong> Embedded with a Google Maps iframe.
-                Maps anchor the story in a specific location.
-            </p>
+        <!-- VIDEO MODE -->
+        <section id="video-mode" class="mode video-showcase">
+            <div class="mode-header">
+                <span class="mode-number">04</span>
+                <h2>Video</h2>
+            </div>
+            <div class="mode-content">
+                <div class="video-demo">
+                    <div class="video-container">
+                        <video controls class="showcase-video">
+                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                            Your browser does not support video.
+                        </video>
+                    </div>
+                </div>
+                <div class="mode-explanation">
+                    <div class="explanation-card">
+                        <h3>Implementation</h3>
+                        <p>Inline video via <code>&lt;video&gt;</code>. Provides movement and context. Source: <a
+                                href="https://www.w3schools.com/html/html5_video.asp" target="_blank">W3Schools</a>.</p>
+                    </div>
+                    <div class="explanation-card">
+                        <h3>Why it's used</h3>
+                        <p>Combines visual and auditory storytelling. Closest medium to real experience, perfect for
+                            demonstrating processes and capturing spontaneous moments.</p>
+                    </div>
+                    <div class="explanation-card">
+                        <h3>Effect on reader</h3>
+                        <p>Provides comprehensive sensory experience and creates strong sense of "being there." Most
+                            engaging multimedia format available.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- TIMELINE -->
-        <section class="mode">
-            <h2>Timeline</h2>
-            <ul>
-                <li>19:00 — Michelsen calls ER</li>
-                <li>20:30 — Fire alarm starts</li>
-                <li>21:00 — Police arrive</li>
-                <li>21:12 — Three shots fired</li>
-            </ul>
-            <p>
-                <strong>Implementation:</strong> Ordered events are presented as an HTML
-                list to show sequence over time.
-            </p>
+        <!-- MAP MODE -->
+        <section id="map-mode" class="mode map-showcase">
+            <div class="mode-header">
+                <span class="mode-number">05</span>
+                <h2>Map</h2>
+            </div>
+            <div class="mode-content">
+                <div class="map-demo">
+                    <div class="map-container">
+                        <iframe class="interactive-map"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15483.85562368875!2d11.360893!3d59.124838100000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sno!2sno!4v1758791476252!5m2!1sno!2sno"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="mode-explanation">
+                    <div class="explanation-card">
+                        <h3>Implementation</h3>
+                        <p>Embedded with Google Maps iframe. Maps anchor stories in specific locations and provide
+                            geographic context.</p>
+                    </div>
+                    <div class="explanation-card">
+                        <h3>Why it's used</h3>
+                        <p>Provides spatial context that text cannot achieve. Helps readers understand distances,
+                            relationships, and geographic factors.</p>
+                    </div>
+                    <div class="explanation-card">
+                        <h3>Effect on reader</h3>
+                        <p>Creates spatial understanding and enables interactive exploration. Transforms abstract
+                            locations into navigable spaces.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- DATA -->
-        <section class="mode">
-            <h2>Data</h2>
-            <pre>
-{
-  "year": 2019,
-  "police_killings": 6,
-  "city": "Bergen"
-}
-        </pre>
-            <p>
-                <strong>Implementation:</strong> Displayed raw data inside a
-                <code>&lt;pre&gt;</code> block to preserve structure and formatting.
-            </p>
+        <!-- TIMELINE MODE -->
+        <section id="timeline-mode" class="mode timeline-showcase">
+            <div class="mode-header">
+                <span class="mode-number">06</span>
+                <h2>Timeline</h2>
+            </div>
+            <div class="mode-content">
+                <div class="timeline-demo">
+                    <div class="timeline-container">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-time">19:00</span>
+                                <p>Michelsen calls ER</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-time">20:30</span>
+                                <p>Fire alarm starts</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-time">21:00</span>
+                                <p>Police arrive</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item active">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-time">21:12</span>
+                                <p>Three shots fired</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mode-explanation">
+                    <div class="explanation-card">
+                        <h3>Implementation</h3>
+                        <p>Ordered events presented as structured timeline to show sequence over time with visual
+                            progression.</p>
+                    </div>
+                    <div class="explanation-card">
+                        <h3>Why it's used</h3>
+                        <p>Organizes complex sequences into chronological order. Essential for investigative journalism
+                            and historical narratives.</p>
+                    </div>
+                    <div class="explanation-card">
+                        <h3>Effect on reader</h3>
+                        <p>Clarifies causality and creates dramatic tension. Precise timestamps build urgency and
+                            authenticity.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- CHART -->
-        <section class="mode">
-            <h2>Chart</h2>
-            <img src="https://quickchart.io/chart?c={type:'bar',data:{labels:['2019','2020','2021','2022','2023','2024'],datasets:[{label:'Police killings',data:[2,1,0,3,5,4]}]}}"
-                alt="Bar chart example" />
-            <p>
-                <strong>Implementation:</strong> Generated via QuickChart API and
-                embedded as an image to visualize numerical data.
-            </p>
-            <p>
-                <em><strong>Note:</strong> The data shown in this chart is fictional and for demonstration purposes
-                    only. It does not represent actual statistics.</em>
-            </p>
+        <!-- DATA MODE -->
+        <section id="data-mode" class="mode data-showcase">
+            <div class="mode-header">
+                <span class="mode-number">07</span>
+                <h2>Data</h2>
+            </div>
+            <div class="mode-content">
+                <div class="data-demo">
+                    <div class="code-terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="btn red"></span>
+                                <span class="btn yellow"></span>
+                                <span class="btn green"></span>
+                            </div>
+                            <span class="terminal-title">data.json</span>
+                        </div>
+                        <pre class="code-content">
+<span class="json-bracket">{</span>
+  <span class="json-key">"year"</span><span class="json-colon">:</span> <span class="json-number">2019</span><span class="json-comma">,</span>
+  <span class="json-key">"police_killings"</span><span class="json-colon">:</span> <span class="json-number">6</span><span class="json-comma">,</span>
+  <span class="json-key">"city"</span><span class="json-colon">:</span> <span class="json-string">"Bergen"</span>
+<span class="json-bracket">}</span>
+                        </pre>
+                    </div>
+                </div>
+                <div class="mode-explanation">
+                    <div class="explanation-card">
+                        <h3>Implementation</h3>
+                        <p>Raw data displayed in <code>&lt;pre&gt;</code> blocks to preserve structure and formatting
+                            for transparency.</p>
+                    </div>
+                    <div class="explanation-card">
+                        <h3>Why it's used</h3>
+                        <p>Provides transparency and enables verification. Appeals to analytically-minded readers who
+                            want to examine evidence.</p>
+                    </div>
+                    <div class="explanation-card">
+                        <h3>Effect on reader</h3>
+                        <p>Builds trust through transparency and provides concrete evidence. JSON format makes
+                            information easily scannable.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- INFOVIZ -->
-        <section class="mode">
-            <h2>Infoviz</h2>
-            <img src="https://quickchart.io/chart?c={type:'pie',data:{labels:['Mobile','Desktop','Tablet'],datasets:[{data:[60,30,10]}]}}"
-                alt="Infographic: Device usage share" />
-            <p>
-                <strong>Implementation:</strong> This infographic was generated dynamically
-                with QuickChart.io. Infoviz condenses numbers into a visual form, making it
-                instantly more understandable.
-            </p>
+        <!-- CHART MODE -->
+        <section id="chart-mode" class="mode chart-showcase">
+            <div class="mode-header">
+                <span class="mode-number">08</span>
+                <h2>Chart</h2>
+            </div>
+            <div class="mode-content">
+                <div class="chart-demo">
+                    <div class="chart-container">
+                        <img src="https://quickchart.io/chart?c={type:'bar',data:{labels:['2019','2020','2021','2022','2023','2024'],datasets:[{label:'Sample Data',data:[2,1,0,3,5,4],backgroundColor:'rgba(59,130,246,0.8)',borderColor:'rgb(59,130,246)',borderWidth:2}]},options:{responsive:true,plugins:{legend:{display:true}},scales:{y:{beginAtZero:true}}}}"
+                            alt="Interactive bar chart visualization" class="chart-image" />
+                        <div class="chart-legend">
+                            <span class="legend-item">
+                                <span class="legend-color"></span>
+                                Sample Data Trends
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mode-explanation">
+                    <div class="explanation-card">
+                        <h3>Implementation</h3>
+                        <p>Generated via QuickChart API and embedded as responsive images to visualize complex numerical
+                            relationships.</p>
+                    </div>
+                    <div class="explanation-card">
+                        <h3>Why it's used</h3>
+                        <p>Transforms numerical data into visual patterns. Reveals trends and relationships that are
+                            difficult to discern from raw numbers.</p>
+                    </div>
+                    <div class="explanation-card">
+                        <h3>Effect on reader</h3>
+                        <p>Makes complex data immediately understandable and reduces cognitive load. Enables quick
+                            pattern recognition and comparison.</p>
+                    </div>
+                </div>
+                <p class="disclaimer"><em><strong>Note:</strong> Data shown is fictional for demonstration purposes
+                        only.</em></p>
+            </div>
+        </section>
+
+        <!-- INFOVIZ MODE -->
+        <section id="infoviz-mode" class="mode infoviz-showcase">
+            <div class="mode-header">
+                <span class="mode-number">09</span>
+                <h2>Infoviz</h2>
+            </div>
+            <div class="mode-content">
+                <div class="infoviz-demo">
+                    <div class="infographic-container">
+                        <img src="https://quickchart.io/chart?c={type:'doughnut',data:{labels:['Mobile','Desktop','Tablet'],datasets:[{data:[60,30,10],backgroundColor:['#3B82F6','#10B981','#F59E0B'],borderWidth:0,cutout:'60%'}]},options:{responsive:true,plugins:{legend:{position:'bottom',labels:{usePointStyle:true,padding:20}}}}}"
+                            alt="Device usage distribution infographic" class="infographic-image" />
+                        <div class="infographic-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">60%</span>
+                                <span class="stat-label">Mobile</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">30%</span>
+                                <span class="stat-label">Desktop</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">10%</span>
+                                <span class="stat-label">Tablet</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mode-explanation">
+                    <div class="explanation-card">
+                        <h3>Implementation</h3>
+                        <p>Generated dynamically with QuickChart.io. Infoviz condenses complex numbers into instantly
+                            understandable visual forms.</p>
+                    </div>
+                    <div class="explanation-card">
+                        <h3>Why it's used</h3>
+                        <p>Transforms abstract data into intuitive representations. Makes statistical information
+                            accessible across all literacy levels.</p>
+                    </div>
+                    <div class="explanation-card">
+                        <h3>Effect on reader</h3>
+                        <p>Provides instant understanding of proportional relationships and transcends language barriers
+                            through universal visual language.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2025 Emil Berglund</p>
-        <p><em>This article is part of the assignment "The Game of Modes" in the course "Communication Design".</em></p>
+
+    <footer class="footer">
+        <p>&copy; 2025 Emil Berglund.</p>
+        <p class="footer-assignment-note">This article is part of the assignment "The Game of Modes" in the course
+            "Communication Design".</p>
     </footer>
 </body>
 
