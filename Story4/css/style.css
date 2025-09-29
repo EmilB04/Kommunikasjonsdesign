@@ -5,6 +5,7 @@
 
 body {
   font: 1rem/1.5 var(--bs-font-sans-serif);
+  background-color: grey;
 }
 
 main {
@@ -22,7 +23,7 @@ p  { font-size: clamp(1rem, 1.2vw, 1.125rem); }
 header{
   text-align: left;
   margin-bottom: 4rem;
-  span{
+  #author{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -53,18 +54,5 @@ section{
     aspect-ratio: 16/9; 
     object-fit: cover;
     border-radius: 10px;
-  }
-}
-
-@media (min-width: 1000px) {
-  .row {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-  }
-  .row img {
-    width: 25%; 
-    height: auto;
-    border-radius: 8px;
   }
 }
