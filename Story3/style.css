@@ -28,6 +28,29 @@ main {
     background: white;
 }
 
+#author-details {
+    display: flex;
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        margin: 0;
+    }
+
+    img {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin-right: 15px;
+    }
+}
+
 .ingress {
     font-style: italic;
     font-size: 1.2em;
@@ -61,4 +84,14 @@ footer {
     color: white;
     padding: 20px;
     margin-top: 40px;
+}
+
+figure {
+    margin: 0;
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    }
 }
