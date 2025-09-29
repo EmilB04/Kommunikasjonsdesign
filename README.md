@@ -2,26 +2,58 @@
 
 A communication design project organized into five distinct stories, each exploring different aspects of visual communication and design principles.
 
+## Contributors
+
+- Emil Berglund (EmilB04)
+  - Story 1 & 3
+- Ida K. Tollaksen (Idatol)
+  - Story 2 & 4
+
 ## Project Structure
 
 ```text
 Kommunikasjonsdesign/
-├── Story1/              # Julian Assange storytelling article
-│   ├── index.html       # Complete story webpage
+├── Story1/
+│   ├── index.html
 │   ├── css/
-│   │   └── style.css    # Optimized stylesheet
+│   │   └── style.css
 │   └── assets/
 │       └── img/
 │           └── AssangeWide.png
-├── Story2/              # Second design story
-├── Story3/              # Third design story
-├── Story4/              # Fourth design story
-└── Story5/              # Fifth design story
+├── Story2/
+│   ├── index.html
+│   ├── css/
+│   │   └── style.css
+│   └── assets/
+│       └── (multiple images)
+├── Story3/
+│   ├── index.html
+│   ├── style.css
+│   └── assets/
+│       └── img/
+│           └── (maps and photos)
+├── Story4/
+│   ├── index.html
+│   ├── css/
+│   │   └── style.css
+│   └── assets/
+│       └── (tsunami documentation)
+└── Story5/
+    ├── index.html
+    └── style.css
 ```
 
 ## About
 
-This project is part of the H2025 curriculum and focuses on communication design principles. Each story folder represents a different chapter or phase of the design exploration, allowing for organized development and presentation of design concepts.
+This project is part of the H2025 curriculum and focuses on communication design principles through practical application. Each story demonstrates different approaches to digital storytelling, from traditional journalism to conceptual analysis and historical documentation. The project showcases various design philosophies, technical implementations, and content strategies while maintaining high standards for accessibility, semantic markup, and responsive design.
+
+**Design Approaches Explored:**
+
+- Traditional storytelling (Story 1)
+- Conceptual analysis (Story 2)
+- Fact-based journalism (Story 3)
+- Historical documentation (Story 4)
+- Combination of storytelling techniques (Story 5)
 
 ## Stories Overview
 
@@ -31,54 +63,44 @@ This project is part of the H2025 curriculum and focuses on communication design
 
 A comprehensive storytelling article exploring the controversial life of WikiLeaks founder Julian Assange. The story traces his journey from early hacking days in Australia to becoming one of the world's most polarizing figures in journalism and transparency activism.
 
-### Story 2
+### Story 2 - PSG's Historic Champions League Victory
 
-Description to be added
+> Concepts — One win, two roads
 
-### Story 3
+A conceptual analysis examining the dual nature of sporting victories, using PSG's 2025 Champions League win as a case study. The article explores how celebration and violence can emerge from the same event, analyzing the social and economic impacts of major sporting achievements.
 
-Description to be added
+### Story 3 - Krigen i Ukraina
 
-### Story 4
+> En faktabasert oversikt over konfliktens bakgrunn og konsekvenser
 
-Description to be added
+A comprehensive fact-based article about the war in Ukraine, providing background, current situation, and international implications. The piece serves as an educational resource covering the conflict from multiple angles with proper sourcing and semantic HTML structure.
 
-### Story 5
+### Story 4 - The Indian Ocean Tsunami of 2004
 
-Description to be added
+> Time — A Day That Changed Everything
 
-## Getting Started
+A retrospective documentary-style article commemorating the 2004 Indian Ocean Tsunami. The piece combines historical documentation with survivor accounts to create a comprehensive narrative about one of the deadliest natural disasters in modern history.
 
-1. Clone this repository
-2. Navigate to individual story folders to explore different design concepts
-3. Each story folder will contain its own assets and documentation
+### Story 5 - Portfolio Foundation
 
-## File Organization
+> Future design exploration
 
-Each story folder is designed to contain:
+Currently serves as a foundation for future communication design exploration. Features a minimal dark theme design ready for content development.
 
-- Design assets (images, graphics, mockups)
-- Documentation and concept notes
-- Project-specific files and resources
+## Technical Implementation
 
-## Contributing
-
-When adding content to story folders:
-
-1. Keep files organized within their respective story directories
-2. Use descriptive filenames
-3. Document your design process and decisions
-4. Include source files when applicable
+Each story demonstrates different technical approaches while maintaining consistent quality standards:
 
 ## Project Timeline
 
 - **Created**: September 2025
 - **Course**: H2025 Kommunikasjonsdesign
-- **Status**: In Development
-
-## Contact
-
-For questions about this project, please refer to the course materials or contact the instructor.
+- **Status**: Active Development
+- **Story 1**: Completed (September 16, 2025) - Julian Assange storytelling
+- **Story 2**: Completed (September 18, 2025) - PSG victory analysis
+- **Story 3**: Completed (September 29, 2025) - Ukraine war facts
+- **Story 4**: Completed (September 19, 2025) - 2004 Tsunami retrospective
+- **Story 5**: Foundation established
 
 ---
 
