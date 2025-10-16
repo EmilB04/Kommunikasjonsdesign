@@ -79,15 +79,23 @@ p {
     margin-bottom: var(--spacing-sm);
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: var(--spacing-md) auto;
+    border-radius: 8px;
+}
+
 a {
     color: var(--color-accent);
     text-decoration: none;
     transition: var(--transition-fast);
-    
-    &:hover {
-        color: var(--color-accent-hover);
-        text-decoration: underline;
-    }
+}
+
+a:hover {
+    color: var(--color-accent-hover);
+    text-decoration: underline;
 }
 
 /* ===== MAIN CONTAINER ===== */
@@ -125,43 +133,43 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     gap: var(--spacing-md);
-    
-    .author {
-        flex: 1;
-        text-align: center;
-        min-width: 280px;
-        
-        img {
-            width: 100%;
-            max-width: 200px;
-            height: auto;
-            border-radius: 50%;
-            margin-bottom: var(--spacing-sm);
-            transition: var(--transition-smooth);
-            
-            &:hover {
-                transform: scale(1.05);
-            }
-        }
-        
-        h3 {
-            font-size: var(--font-size-body-large);
-            color: var(--color-text-primary);
-            margin-bottom: 0.5rem;
-        }
-        
-        p {
-            color: var(--color-text-secondary);
-            font-size: var(--font-size-body);
-        }
-    }
+}
 
-    #publish-date {
-        flex-basis: 100%;
-        text-align: center !important;
-        font-size: var(--font-size-body);
-        color: var(--color-text-secondary);
-    }
+#author-info .author {
+    flex: 1;
+    text-align: center;
+    min-width: 280px;
+}
+
+#author-info .author img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: var(--spacing-sm);
+    transition: var(--transition-smooth);
+}
+
+#author-info .author img:hover {
+    transform: scale(1.05);
+}
+
+#author-info .author h3 {
+    font-size: var(--font-size-body-large);
+    color: var(--color-text-primary);
+    margin-bottom: 0.5rem;
+}
+
+#author-info .author p {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-body);
+}
+
+#author-info #publish-date {
+    flex-basis: 100%;
+    text-align: center !important;
+    font-size: var(--font-size-body);
+    color: var(--color-text-secondary);
 }
 
 /* ===== SECTION STYLES ===== */
@@ -172,117 +180,117 @@ section {
     opacity: 0;
     transform: translateY(40px);
     transition: var(--transition-smooth);
-    
-    &.visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    
-    /* Introduction Section */
-    &#introduction {
-        padding-top: var(--spacing-xl);
-        padding-bottom: var(--spacing-xl);
-        
-        h2 {
-            color: var(--color-text-primary);
-            margin-bottom: var(--spacing-md);
-        }
-        
-        p {
-            font-size: var(--font-size-body-large);
-            line-height: 1.7;
-            color: var(--color-text-secondary);
-        }
-    }
-    
-    /* Helpers Section */
-    &#helpers {
-        padding-top: var(--spacing-xl);
-        padding-bottom: var(--spacing-xl);
-        
-        h2 {
-            color: var(--color-text-primary);
-            margin-bottom: var(--spacing-md);
-        }
-    }
-    
-    /* Cost Section */
-    &#cost {
-        padding-top: var(--spacing-xl);
-        padding-bottom: var(--spacing-xl);
-        
-        h2 {
-            color: var(--color-text-primary);
-            margin-bottom: var(--spacing-md);
-        }
-    }
-    
-    /* Work & School Section */
-    &#work-school {
-        padding-top: var(--spacing-xl);
-        padding-bottom: var(--spacing-xl);
-        
-        h2 {
-            color: var(--color-text-primary);
-            margin-bottom: var(--spacing-md);
-        }
-    }
-    
-    /* Future Section */
-    &#future {
-        padding-top: var(--spacing-xl);
-        padding-bottom: var(--spacing-xl);
-        
-        h2 {
-            color: var(--color-text-primary);
-            margin-bottom: var(--spacing-md);
-        }
-    }
-    
-    /* Conclusion Section */
-    &#conclusion {
-        padding-top: var(--spacing-xl);
-        padding-bottom: var(--spacing-xl);
-        
-        h2 {
-            color: var(--color-text-primary);
-            margin-bottom: var(--spacing-md);
-        }
-        
-        p {
-            font-size: var(--font-size-body-large);
-            color: var(--color-text-secondary);
-        }
-    }
-    
-    /* References Section */
-    &#references {
-        padding-top: var(--spacing-lg);
-        padding-bottom: var(--spacing-xl);
-        
-        h2 {
-            color: var(--color-text-primary);
-            margin-bottom: var(--spacing-sm);
-            font-size: var(--font-size-body-large);
-        }
-        
-        ol {
-            padding-left: 1.5rem;
-            
-            li {
-                margin-bottom: 1rem;
-                color: var(--color-text-secondary);
-                
-                a {
-                    color: var(--color-accent);
-                    
-                    &:hover {
-                        color: var(--color-accent-hover);
-                    }
-                }
-            }
-        }
-    }
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Introduction Section */
+section#introduction {
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+}
+
+section#introduction h2 {
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+section#introduction p {
+    font-size: var(--font-size-body-large);
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+}
+
+/* Helpers Section */
+section#helpers {
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+}
+
+section#helpers h2 {
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+/* Cost Section */
+section#cost {
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+}
+
+section#cost h2 {
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+/* Work & School Section */
+section#work-school {
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+}
+
+section#work-school h2 {
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+/* Future Section */
+section#future {
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+}
+
+section#future h2 {
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+/* Conclusion Section */
+section#conclusion {
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+}
+
+section#conclusion h2 {
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+section#conclusion p {
+    font-size: var(--font-size-body-large);
+    color: var(--color-text-secondary);
+}
+
+/* References Section */
+section#references {
+    padding-top: var(--spacing-lg);
+    padding-bottom: var(--spacing-xl);
+}
+
+section#references h2 {
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-body-large);
+}
+
+section#references ol {
+    padding-left: 1.5rem;
+}
+
+section#references ol li {
+    margin-bottom: 1rem;
+    color: var(--color-text-secondary);
+}
+
+section#references ol li a {
+    color: var(--color-accent);
+}
+
+section#references ol li a:hover {
+    color: var(--color-accent-hover);
 }
 
 /* ===== ANIMATIONS ===== */
