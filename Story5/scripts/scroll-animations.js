@@ -38,13 +38,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    // Add parallax effect to header on scroll (subtle)
+    // Add parallax effect to header on scroll (stops at max height)
     const header = document.getElementById('header');
     if (header) {
+        const maxScroll = 800; // Maximum scroll distance before stopping (in pixels)
+        
         window.addEventListener('scroll', () => {
             const scrolled = window.pageYOffset;
-            const rate = scrolled * 0.5;
-            header.style.transform = `translate3d(0, ${rate}px, 0)`;
+            
+            // Stop the effect after reaching maxScroll
+            if (scrolled <= maxScroll) {
+                const rate = scrolled * 0.5;
+                header.style.transform = `translate3d(0, ${rate}px, 0)`;
+            } else {
+                // Lock at maximum values
+                const maxRate = maxScroll * 0.8;
+                header.style.transform = `translate3d(0, ${maxRate}px, 0)`;
+
+            }
         });
     }
 });
