@@ -383,46 +383,10 @@
                             </span>
                         </div>
                     </div>
-                </div>
-                <div class="mode-explanation">
-                    <div class="explanation-card">
-                        <h3>Implementation</h3>
-                        <p><strong>Current method:</strong> External QuickChart.io API generating bar chart images dynamically with URL parameters and custom legend.</p>
-                        <p><strong>Alternatives:</strong></p>
-                        <ul>
-                            <li>JavaScript charting libraries (Chart.js, D3.js, Recharts)</li>
-                            <li>Google Charts API integration</li>
-                            <li>CSS-only bar charts and progress indicators</li>
-                            <li>Embedded charts from Excel or Google Sheets</li>
-                        </ul>
-                    </div>
-                    <div class="explanation-card">
-                        <h3>Why it's used</h3>
-                        <p>Transforms numerical data into visual patterns. Reveals trends and relationships that are
-                            difficult to discern from raw numbers.</p>
-                    </div>
-                    <div class="explanation-card">
-                        <h3>Effect on reader</h3>
-                        <p>Makes complex data immediately understandable and reduces cognitive load. Enables quick
-                            pattern recognition and comparison.</p>
-                    </div>
-                </div>
-                <p class="disclaimer"><em><strong>Note:</strong> Data shown is fictional for demonstration purposes
-                        only.</em></p>
-            </div>
-        </section>
-
-        <!-- INFOVIZ MODE -->
-        <section id="infoviz-mode" class="mode infoviz-showcase">
-            <div class="mode-header">
-                <span class="mode-number">09</span>
-                <h2>Infoviz</h2>
-            </div>
-            <div class="mode-content">
-                <div class="infoviz-demo">
-                    <div class="infographic-container">
+                    
+                    <div class="chart-container">
                         <img src="https://quickchart.io/chart?c={type:'pie',data:{labels:['Mobile','Desktop','Tablet'],datasets:[{data:[60,30,10]}]}}"
-                            alt="Device usage distribution infographic" class="infographic-image" />
+                            alt="Device usage distribution pie chart" class="chart-image" />
                         <div class="infographic-stats">
                             <div class="stat-item">
                                 <span class="stat-value">60%</span>
@@ -442,29 +406,255 @@
                 <div class="mode-explanation">
                     <div class="explanation-card">
                         <h3>Implementation</h3>
-                        <p><strong>Current method:</strong> Combination of QuickChart.io doughnut chart with custom HTML statistics grid for data display.</p>
+                        <p><strong>Current method:</strong> External QuickChart.io API generating chart images (bar and pie charts) dynamically with URL parameters and custom legends.</p>
                         <p><strong>Alternatives:</strong></p>
                         <ul>
-                            <li>Custom infographic design with CSS Grid/Flexbox</li>
-                            <li>Animated SVG infographics</li>
-                            <li>Progressive data reveal with JavaScript</li>
+                            <li>JavaScript charting libraries (Chart.js, D3.js, Recharts)</li>
+                            <li>Google Charts API integration</li>
+                            <li>CSS-only bar charts and progress indicators</li>
+                            <li>Embedded charts from Excel or Google Sheets</li>
+                            <li>SVG-based custom charts</li>
                         </ul>
                     </div>
                     <div class="explanation-card">
                         <h3>Why it's used</h3>
-                        <p>Transforms abstract data into intuitive representations. Makes statistical information
-                            accessible across all literacy levels.</p>
+                        <p>Transforms numerical data into visual patterns. Reveals trends, comparisons, and proportional relationships that are
+                            difficult to discern from raw numbers. Different chart types serve different purposes: bar charts for comparisons, pie charts for proportions.</p>
                     </div>
                     <div class="explanation-card">
                         <h3>Effect on reader</h3>
-                        <p>Provides instant understanding of proportional relationships and transcends language barriers
-                            through universal visual language.</p>
+                        <p>Makes complex data immediately understandable and reduces cognitive load. Enables quick
+                            pattern recognition and comparison. Provides instant understanding of both trends and proportions.</p>
                     </div>
                 </div>
                 <p class="disclaimer"><em><strong>Note:</strong> Data shown is fictional for demonstration purposes
                         only.</em></p>
             </div>
         </section>
+
+        <!-- INFOVIZ MODE -->
+        <section id="infoviz-mode" class="mode infoviz-showcase">
+            <div class="mode-header">
+                <span class="mode-number">09</span>
+                <h2>Information Visualization</h2>
+            </div>
+            <div class="mode-content">
+                <div class="infoviz-demo">
+                    <div class="infoviz-grid">
+                        <!-- Engagement Rate Visualization -->
+                        <div class="infoviz-card">
+                            <h4>Engagement Rate by Format</h4>
+                            <div class="bar-chart-vertical">
+                                <div class="bar-group">
+                                    <div class="bar" style="height: 45%; background: linear-gradient(180deg, #3b82f6 0%, #2563eb 100%);">
+                                        <span class="bar-value">45%</span>
+                                    </div>
+                                    <span class="bar-label">Text</span>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar" style="height: 72%; background: linear-gradient(180deg, #10b981 0%, #059669 100%);">
+                                        <span class="bar-value">72%</span>
+                                    </div>
+                                    <span class="bar-label">Photo</span>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar" style="height: 65%; background: linear-gradient(180deg, #f59e0b 0%, #d97706 100%);">
+                                        <span class="bar-value">65%</span>
+                                    </div>
+                                    <span class="bar-label">Audio</span>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar" style="height: 88%; background: linear-gradient(180deg, #ef4444 0%, #dc2626 100%);">
+                                        <span class="bar-value">88%</span>
+                                    </div>
+                                    <span class="bar-label">Video</span>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar" style="height: 58%; background: linear-gradient(180deg, #8b5cf6 0%, #7c3aed 100%);">
+                                        <span class="bar-value">58%</span>
+                                    </div>
+                                    <span class="bar-label">Map</span>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar" style="height: 54%; background: linear-gradient(180deg, #ec4899 0%, #db2777 100%);">
+                                        <span class="bar-value">54%</span>
+                                    </div>
+                                    <span class="bar-label">Data</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Information Retention -->
+                        <div class="infoviz-card">
+                            <h4>24-Hour Information Retention</h4>
+                            <div class="retention-comparison">
+                                <div class="retention-item">
+                                    <div class="retention-bar">
+                                        <div class="retention-fill" style="width: 28%; background: #3b82f6;"></div>
+                                    </div>
+                                    <div class="retention-info">
+                                        <span class="retention-label">Text Only</span>
+                                        <span class="retention-value">28%</span>
+                                    </div>
+                                </div>
+                                <div class="retention-item">
+                                    <div class="retention-bar">
+                                        <div class="retention-fill" style="width: 42%; background: #10b981;"></div>
+                                    </div>
+                                    <div class="retention-info">
+                                        <span class="retention-label">Text + Images</span>
+                                        <span class="retention-value">42%</span>
+                                    </div>
+                                </div>
+                                <div class="retention-item">
+                                    <div class="retention-bar">
+                                        <div class="retention-fill" style="width: 65%; background: #f59e0b;"></div>
+                                    </div>
+                                    <div class="retention-info">
+                                        <span class="retention-label">Multimedia</span>
+                                        <span class="retention-value">65%</span>
+                                    </div>
+                                </div>
+                                <div class="retention-item">
+                                    <div class="retention-bar">
+                                        <div class="retention-fill" style="width: 78%; background: #ef4444;"></div>
+                                    </div>
+                                    <div class="retention-info">
+                                        <span class="retention-label">Interactive</span>
+                                        <span class="retention-value">78%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Reading Time Stats -->
+                        <div class="infoviz-card">
+                            <h4>Average Time Spent per Mode</h4>
+                            <div class="time-stats">
+                                <div class="time-stat-item">
+                                    <div class="time-icon">📝</div>
+                                    <div class="time-details">
+                                        <span class="time-value">2:45</span>
+                                        <span class="time-label">Text Articles</span>
+                                    </div>
+                                </div>
+                                <div class="time-stat-item">
+                                    <div class="time-icon">📸</div>
+                                    <div class="time-details">
+                                        <span class="time-value">1:30</span>
+                                        <span class="time-label">Photo Essays</span>
+                                    </div>
+                                </div>
+                                <div class="time-stat-item">
+                                    <div class="time-icon">🎥</div>
+                                    <div class="time-details">
+                                        <span class="time-value">4:20</span>
+                                        <span class="time-label">Video Content</span>
+                                    </div>
+                                </div>
+                                <div class="time-stat-item">
+                                    <div class="time-icon">📊</div>
+                                    <div class="time-details">
+                                        <span class="time-value">3:10</span>
+                                        <span class="time-label">Data Visualizations</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Device Preferences -->
+                        <div class="infoviz-card">
+                            <h4>Content Consumption by Device</h4>
+                            <div class="device-breakdown">
+                                <div class="device-item">
+                                    <div class="device-icon">📱</div>
+                                    <div class="device-percentage">
+                                        <div class="circular-progress" style="background: conic-gradient(#3b82f6 0% 63%, #e5e7eb 63% 100%);">
+                                            <span class="progress-value">63%</span>
+                                        </div>
+                                    </div>
+                                    <span class="device-label">Mobile</span>
+                                </div>
+                                <div class="device-item">
+                                    <div class="device-icon">💻</div>
+                                    <div class="device-percentage">
+                                        <div class="circular-progress" style="background: conic-gradient(#10b981 0% 28%, #e5e7eb 28% 100%);">
+                                            <span class="progress-value">28%</span>
+                                        </div>
+                                    </div>
+                                    <span class="device-label">Desktop</span>
+                                </div>
+                                <div class="device-item">
+                                    <div class="device-icon">⌨️</div>
+                                    <div class="device-percentage">
+                                        <div class="circular-progress" style="background: conic-gradient(#f59e0b 0% 9%, #e5e7eb 9% 100%);">
+                                            <span class="progress-value">9%</span>
+                                        </div>
+                                    </div>
+                                    <span class="device-label">Tablet</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Key Insights -->
+                        <div class="infoviz-card insights-card">
+                            <h4>Key Insights</h4>
+                            <ul class="insights-list">
+                                <li>
+                                    <span class="insight-icon">🎯</span>
+                                    <span class="insight-text">Video content shows <strong>88% engagement</strong>, the highest of all formats</span>
+                                </li>
+                                <li>
+                                    <span class="insight-icon">🧠</span>
+                                    <span class="insight-text">Interactive multimedia improves retention by <strong>178%</strong> vs. text alone</span>
+                                </li>
+                                <li>
+                                    <span class="insight-icon">📱</span>
+                                    <span class="insight-text">Mobile devices account for <strong>63%</strong> of digital storytelling consumption</span>
+                                </li>
+                                <li>
+                                    <span class="insight-icon">⏱️</span>
+                                    <span class="insight-text">Optimal content length is <strong>3-4 minutes</strong> for maximum engagement</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Sample Size Note -->
+                        <div class="infoviz-card methodology-card">
+                            <h4>Methodology</h4>
+                            <p><strong>Sample Size:</strong> 2,500 participants</p>
+                            <p><strong>Study Period:</strong> January - September 2024</p>
+                            <p><strong>Geographic Scope:</strong> Norway (Oslo, Bergen, Trondheim)</p>
+                            <p><strong>Age Range:</strong> 18-65 years</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mode-explanation">
+                    <div class="explanation-card">
+                        <h3>Implementation</h3>
+                        <p><strong>Current method:</strong> Custom CSS Grid layout with hand-coded HTML/CSS visualizations including bar charts, progress bars, and circular progress indicators.</p>
+                        <p><strong>Alternatives:</strong></p>
+                        <ul>
+                            <li>Infogram or Canva for design-focused infographics</li>
+                            <li>SVG-based custom illustrations with animations</li>
+                            <li>JavaScript libraries like Chart.js combined with custom HTML</li>
+                        </ul>
+                    </div>
+                    <div class="explanation-card">
+                        <h3>Why it's used</h3>
+                        <p>Information visualization (infoviz) combines multiple data presentation techniques into a cohesive narrative. It transforms complex datasets into intuitive, scannable layouts that tell a complete story at a glance.</p>
+                    </div>
+                    <div class="explanation-card">
+                        <h3>Effect on reader</h3>
+                        <p>Creates comprehensive understanding through multiple data perspectives. Readers can quickly grasp key insights while having access to detailed breakdowns. The visual hierarchy guides attention to the most important findings.</p>
+                    </div>
+                </div>
+                <p class="disclaimer"><em><strong>Note:</strong> All data shown is fictional and created for demonstration purposes only. These statistics do not represent real research findings.</em></p>
+            </div>
+        </section>
+
+
         <footer class="footer">
             <p>&copy; 2025 Emil Berglund.</p>
             <p class="footer-assignment-note">This article is part of the assignment "The Game of Modes" in the course
