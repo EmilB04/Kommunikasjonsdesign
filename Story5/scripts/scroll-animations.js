@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     // Add parallax effect to header on scroll (stops at max height)
-    const header = document.getElementById('header');
+    const header = document.getElementsByTagName('header')[0];
     if (header) {
         const maxScroll = 800; // Maximum scroll distance before stopping (in pixels)
         
@@ -48,14 +48,9 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Stop the effect after reaching maxScroll
             if (scrolled <= maxScroll) {
-                const rate = scrolled * 0.5;
+                const rate = scrolled * 0.6;
                 header.style.transform = `translate3d(0, ${rate}px, 0)`;
-            } else {
-                // Lock at maximum values
-                const maxRate = maxScroll * 0.8;
-                header.style.transform = `translate3d(0, ${maxRate}px, 0)`;
-
-            }
+            } 
         });
     }
 });
