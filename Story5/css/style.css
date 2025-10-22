@@ -120,6 +120,7 @@ header {
     padding: var(--spacing-xl) var(--spacing-sm);
     max-width: var(--max-width);
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -156,10 +157,22 @@ header {
     }
 
     #publish-date {
+        display: flex;
         flex-basis: 100%;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
         text-align: center !important;
         font-size: var(--font-size-body);
         color: var(--color-text-secondary);
+
+        h3,
+        p {
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            font-size: var(--font-size-body);
+        }
     }
 }
 
