@@ -84,15 +84,6 @@ p {
     margin-bottom: var(--spacing-sm);
 }
 
-img {
-    width: 50%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: var(--spacing-md) auto;
-    border-radius: 8px;
-}
-
 a {
     color: var(--color-accent);
     text-decoration: none;
