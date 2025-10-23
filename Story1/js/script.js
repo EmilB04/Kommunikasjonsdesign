@@ -29,3 +29,31 @@ if (scrollIndicator) {
         }
     });
 }
+
+// Video play overlay functionality
+const videoContainers = document.querySelectorAll('.video-container');
+videoContainers.forEach(container => {
+    const video = container.querySelector('video');
+    const playOverlay = container.querySelector('.play-overlay');
+    
+    if (video && playOverlay) {
+        // Hide overlay when video plays
+        video.addEventListener('play', () => {
+            playOverlay.style.display = 'none';
+        });
+        
+        // Show overlay when video pauses or ends
+        video.addEventListener('pause', () => {
+            playOverlay.style.display = 'flex';
+        });
+        
+        video.addEventListener('ended', () => {
+            playOverlay.style.display = 'flex';
+        });
+        
+        // Click overlay to play video
+        playOverlay.addEventListener('click', () => {
+            video.play();
+        });
+    }
+});
