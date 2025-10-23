@@ -105,13 +105,45 @@ header {
     text-align: center;
     padding: var(--spacing-lg) var(--spacing-sm);
     position: relative;
+    overflow: hidden;
+    
+    /* Background with blur effect */
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('../assets/img/ai_daily.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(2px);
+        transform: scale(1.1);
+        z-index: 0;
+    }
+    
+    /* Dark overlay for better text readability */
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
 
-    h1 {
+    & h1 {
         font-size: var(--font-size-hero);
         font-weight: 700;
         color: var(--color-text-primary);
         margin-bottom: var(--spacing-md);
         animation: fadeInUp 1s ease-out;
+        position: relative;
+        z-index: 2;
     }
 }
 
