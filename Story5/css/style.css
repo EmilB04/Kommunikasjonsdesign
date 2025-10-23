@@ -337,6 +337,42 @@ section#references {
     }
 }
 
+/* ===== SCROLL TO TOP BUTTON ===== */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    background-color: #2b2d5f;
+    color: var(--color-text-primary);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: var(--transition-fast);
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    
+    &:hover {
+        background-color: #3a3d7a;
+        transform: translateY(0) scale(1.1);
+    }
+    
+    &:active {
+        transform: translateY(0) scale(0.95);
+    }
+    
+    &.visible {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
 /* ===== ACCESSIBILITY ===== */
 @media (prefers-reduced-motion: reduce) {
 
