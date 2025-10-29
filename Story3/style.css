@@ -88,10 +88,20 @@ footer {
 
 figure {
     margin: 0;
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 20px auto;
-    }
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+figure figcaption {
+    font-size: 0.95em;
+    color: #666;
+    margin-top: 8px;
+    font-style: italic;
+    text-align: left;
 }
