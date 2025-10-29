@@ -4,44 +4,14 @@ A communication design project organized into five distinct stories, each explor
 
 ## Contributors
 
-- Emil Berglund (EmilB04)
-  - Story 1 & 3
-- Ida K. Tollaksen (Idatol)
-  - Story 2 & 4
-
-## Project Structure
-
-```text
-Kommunikasjonsdesign/
-├── Story1/
-│   ├── index.html
-│   ├── css/
-│   │   └── style.css
-│   └── assets/
-│       └── img/
-│           └── AssangeWide.png
-├── Story2/
-│   ├── index.html
-│   ├── css/
-│   │   └── style.css
-│   └── assets/
-│       └── (multiple images)
-├── Story3/
-│   ├── index.html
-│   ├── style.css
-│   └── assets/
-│       └── img/
-│           └── (maps and photos)
-├── Story4/
-│   ├── index.html
-│   ├── css/
-│   │   └── style.css
-│   └── assets/
-│       └── (tsunami documentation)
-└── Story5/
-    ├── index.html
-    └── style.css
-```
+- **Emil Berglund** (EmilB04)
+  - Story 1: Julian Assanges historie
+  - Story 3: Krigen i Ukraina
+  - Story 5: AI in Our Daily Lives
+- **Ida K. Tollaksen** (Idatol)
+  - Story 2: PSG's Historic Champions League Victory
+  - Story 4: The Indian Ocean Tsunami of 2004
+  - Story 5: AI in Our Daily Lives
 
 ## About
 
@@ -81,11 +51,11 @@ A comprehensive fact-based article about the war in Ukraine, providing backgroun
 
 A retrospective documentary-style article commemorating the 2004 Indian Ocean Tsunami. The piece combines historical documentation with survivor accounts to create a comprehensive narrative about one of the deadliest natural disasters in modern history.
 
-### Story 5 - Portfolio Foundation
+### Story 5 - AI in Our Daily Lives
 
-> Future design exploration
+> An immersive exploration of AI's impact on everyday life
 
-Currently serves as a foundation for future communication design exploration. Features a minimal dark theme design ready for content development.
+A comprehensive longform article examining how artificial intelligence has become deeply integrated into our daily routines. The story explores AI's presence in morning routines, the invisible helpers we depend on, the costs of convenience (energy consumption, deepfakes, abuse), and the broader implications for work, school, and society. Features smooth scroll animations, parallax effects, and a modern dark-themed Apple-inspired design.
 
 ## Technical Implementation
 
@@ -96,11 +66,11 @@ Each story demonstrates different technical approaches while maintaining consist
 - **Created**: September 2025
 - **Course**: H2025 Kommunikasjonsdesign
 - **Status**: Active Development
-- **Story 1**: Completed (September 16, 2025) - Julian Assange storytelling
-- **Story 2**: Completed (September 18, 2025) - PSG victory analysis
-- **Story 3**: Completed (September 29, 2025) - Ukraine war facts
-- **Story 4**: Completed (September 19, 2025) - 2004 Tsunami retrospective
-- **Story 5**: Foundation established
+- **Story 1**: Completed (September 16, 2025) - Updated October 29, 2025
+- **Story 2**: Completed (September 18, 2025)
+- **Story 3**: Completed (September 29, 2025) - Updated October 29, 2025
+- **Story 4**: Completed (September 19, 2025)
+- **Story 5**: In Development (October 2025) - Content and animations implemented
 
 ---
 
