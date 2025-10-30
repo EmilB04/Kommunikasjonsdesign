@@ -105,13 +105,59 @@ header {
     text-align: center;
     padding: var(--spacing-lg) var(--spacing-sm);
     position: relative;
+    overflow: hidden;
+    
+    /* Background with blur effect */
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('../assets/img/ai_daily.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: scale(1.1);
+        z-index: 0;
+    }
+    
+    /* Dark overlay for better text readability */
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
 
-    h1 {
+    & h1 {
         font-size: var(--font-size-hero);
         font-weight: 700;
         color: var(--color-text-primary);
         margin-bottom: var(--spacing-md);
         animation: fadeInUp 1s ease-out;
+        position: relative;
+        z-index: 2;
+        padding: var(--spacing-sm);
+        
+        /* Gradient blur background */
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, 
+                rgba(43, 45, 95, 0.6) 0%, 
+                rgba(58, 61, 122, 0.4) 50%, 
+                rgba(43, 45, 95, 0.6) 100%);
+            backdrop-filter: blur(3px);
+            border-radius: 20px;
+            z-index: -1;
+        }
     }
 }
 
@@ -302,6 +348,42 @@ section#references {
     :root {
         --max-width: 1200px;
         --max-width-text: 900px;
+    }
+}
+
+/* ===== SCROLL TO TOP BUTTON ===== */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    background-color: #2b2d5f;
+    color: var(--color-text-primary);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: var(--transition-fast);
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    
+    &:hover {
+        background-color: #3a3d7a;
+        transform: translateY(0) scale(1.1);
+    }
+    
+    &:active {
+        transform: translateY(0) scale(0.95);
+    }
+    
+    &.visible {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
     }
 }
 
