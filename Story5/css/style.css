@@ -33,6 +33,41 @@
     --transition-fast: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* ===== FIGCAPTION / FIGURE STYLES ===== */
+figure {
+    margin: var(--spacing-md) 0;
+    display: block;
+    text-align: center;
+}
+
+figcaption {
+    display: block;
+    margin: 0.75rem auto 0;
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
+    color: var(--color-text-secondary);
+    text-align: center;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 0.35rem 0.6rem;
+    border-radius: 8px;
+    max-width: min(92%, 720px);
+    line-height: 1.4;
+}
+
+@media (prefers-color-scheme: light) {
+    figcaption {
+        background: rgba(10, 12, 22, 0.03);
+        color: #394b6a;
+    }
+}
+
+@media print {
+    figcaption {
+        background: transparent;
+        color: #222;
+        font-style: normal;
+    }
+}
 /* ===== GLOBAL RESET & BASE STYLES ===== */
 * {
     margin: 0;
