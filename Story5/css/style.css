@@ -78,6 +78,7 @@ figcaption {
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    scroll-padding-top: 45vh;
 }
 
 body {
@@ -127,6 +128,16 @@ a {
     &:hover {
         color: var(--color-accent-hover);
         text-decoration: underline;
+    }
+}
+
+.ref{
+    color: var(--color-text-secondary);
+    text-decoration: none;
+
+    &:hover {
+        color: var(--color-text-primary);
+        text-decoration: none;
     }
 }
 
@@ -312,6 +323,13 @@ section#references {
             }
         }
     }
+}
+
+footer p{
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-sm);
 }
 
 /* ===== DRAMATIC BLOCKQUOTE ===== */
