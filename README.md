@@ -1,17 +1,17 @@
 # Kommunikasjonsdesign
 
-A communication design project organized into five distinct stories, each exploring different aspects of visual communication and design principles.
+A communication design project organized into five distinct stories, each exploring different aspects of visual communication and design principles. All stories are presented in either Norwegian or English.
 
 ## Contributors
 
 - **Emil Berglund** (EmilB04)
-  - Story 1: Julian Assanges historie
-  - Story 3: Krigen i Ukraina
-  - Story XL: AI in Our Daily Lives
+  - Story 1: Julian Assange's Story (Norwegian)
+  - Story 3: The War in Ukraine (Norwegian)
+  - Story XL: AI in Our Daily Lives (English)
 - **Ida K. Tollaksen** (Idatol)
-  - Story 2: PSG's Historic Champions League Victory
-  - Story 4: The Indian Ocean Tsunami of 2004
-  - Story XL: AI in Our Daily Lives
+  - Story 2: PSG's Historic Champions League Victory (English)
+  - Story 4: The Indian Ocean Tsunami of 2004 (English)
+  - Story XL: AI in Our Daily Lives (English)
 
 ## About
 
@@ -29,25 +29,25 @@ This project is part of the H2025 curriculum and focuses on communication design
 
 ### Story 1 - Julian Assanges historie
 
-> Fra hackermiljø til global varsler
+> Storytelling - Fra hackermiljø til global varsler
 
 A comprehensive storytelling article exploring the controversial life of WikiLeaks founder Julian Assange. The story traces his journey from early hacking days in Australia to becoming one of the world's most polarizing figures in journalism and transparency activism.
 
 ### Story 2 - PSG's Historic Champions League Victory
 
-> Concepts — One win, two roads
+> Concepts - One win, two roads
 
 A conceptual analysis examining the dual nature of sporting victories, using PSG's 2025 Champions League win as a case study. The article explores how celebration and violence can emerge from the same event, analyzing the social and economic impacts of major sporting achievements.
 
 ### Story 3 - Krigen i Ukraina
 
-> En faktabasert oversikt over konfliktens bakgrunn og konsekvenser
+> Facts - En faktabasert oversikt over konfliktens bakgrunn og konsekvenser
 
 A comprehensive fact-based article about the war in Ukraine, providing background, current situation, and international implications. The piece serves as an educational resource covering the conflict from multiple angles with proper sourcing and semantic HTML structure.
 
 ### Story 4 - The Indian Ocean Tsunami of 2004
 
-> Time — A Day That Changed Everything
+> Time - A Day That Changed Everything
 
 A retrospective documentary-style article commemorating the 2004 Indian Ocean Tsunami. The piece combines historical documentation with survivor accounts to create a comprehensive narrative about one of the deadliest natural disasters in modern history.
 
@@ -65,7 +65,7 @@ Each story demonstrates different technical approaches while maintaining consist
 
 - **Created**: September 2025
 - **Course**: H2025 Kommunikasjonsdesign
-- **Status**: Active Development
+- **Overall Status**: Completed
 - **Story 1**: Completed (September 16, 2025) - Updated October 29, 2025
 - **Story 2**: Completed (September 18, 2025)
 - **Story 3**: Completed (September 29, 2025) - Updated October 29, 2025
