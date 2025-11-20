@@ -7,11 +7,11 @@ A communication design project organized into five distinct stories, each explor
 - **Emil Berglund** (EmilB04)
   - Story 1: Julian Assanges historie
   - Story 3: Krigen i Ukraina
-  - Story 5: AI in Our Daily Lives
+  - Story XL: AI in Our Daily Lives
 - **Ida K. Tollaksen** (Idatol)
   - Story 2: PSG's Historic Champions League Victory
   - Story 4: The Indian Ocean Tsunami of 2004
-  - Story 5: AI in Our Daily Lives
+  - Story XL: AI in Our Daily Lives
 
 ## About
 
@@ -23,7 +23,7 @@ This project is part of the H2025 curriculum and focuses on communication design
 - Conceptual analysis (Story 2)
 - Fact-based journalism (Story 3)
 - Historical documentation (Story 4)
-- Combination of storytelling techniques (Story 5)
+- Combination of storytelling techniques (Story XL)
 
 ## Stories Overview
 
@@ -51,7 +51,7 @@ A comprehensive fact-based article about the war in Ukraine, providing backgroun
 
 A retrospective documentary-style article commemorating the 2004 Indian Ocean Tsunami. The piece combines historical documentation with survivor accounts to create a comprehensive narrative about one of the deadliest natural disasters in modern history.
 
-### Story 5 - AI in Our Daily Lives
+### Story XL - AI in Our Daily Lives
 
 > An immersive exploration of AI's impact on everyday life
 
@@ -70,7 +70,7 @@ Each story demonstrates different technical approaches while maintaining consist
 - **Story 2**: Completed (September 18, 2025)
 - **Story 3**: Completed (September 29, 2025) - Updated October 29, 2025
 - **Story 4**: Completed (September 19, 2025)
-- **Story 5**: In Development (October 2025) - Content and animations implemented
+- **Story XL**: Completed (November 24, 2025)
 
 ---
 
