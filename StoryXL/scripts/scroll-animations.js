@@ -55,13 +55,13 @@ document.addEventListener('DOMContentLoaded', () => {
     dots.forEach(dot => {
         dot.addEventListener('click', () => {
             const id = dot.dataset.section;
-            
+
             // If it's the header (first dot), scroll to top
             if (id === 'header') {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
                 return;
             }
-            
+
             // Otherwise, scroll to the section's heading
             const target = document.getElementById(id);
             if (target) {
@@ -75,14 +75,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Update active dot based on scroll position (detecting at header/section level)
     function updateActiveDot() {
         const scrollPosition = window.scrollY + 150; // Offset for detection
-        
+
         let activeSection = null;
-        
+
         // Find which section is currently active based on scroll position
         for (let i = 0; i < sectionRefs.length; i++) {
             const section = sectionRefs[i];
             const sectionTop = section.offsetTop;
-            
+
             // Check if we're at or past this section
             if (scrollPosition >= sectionTop - 100) {
                 activeSection = section;
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 break;
             }
         }
-        
+
         // Update active class on dots
         if (activeSection) {
             const activeSectionId = activeSection.id;
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
-    
+
     // Update on scroll
     let scrollTimeout;
     window.addEventListener('scroll', () => {
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         scrollTimeout = window.requestAnimationFrame(updateActiveDot);
     });
-    
+
     // Initial update
     updateActiveDot();
 
@@ -135,4 +135,22 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollButton.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+});
+
+// ===== AI TIMELINE ACTIVATION =====
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('#ai-timeline .timeline-slide');
+
+    const slideObserver = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        },
+        { threshold: 0.4 }
+    );
+
+    slides.forEach((slide) => slideObserver.observe(slide));
 });
