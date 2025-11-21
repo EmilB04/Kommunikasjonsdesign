@@ -1033,6 +1033,14 @@ blockquote {
     text-align: center;
 }
 
+.insights-card p {
+    font-size: 0.75rem !important;
+    color: rgba(134, 134, 139, 0.5);
+    text-align: center;
+    font-style: italic;
+    margin-bottom: var(--spacing-sm);
+}
+
 .insights-list {
     list-style: none;
     padding: 0;
