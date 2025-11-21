@@ -65,7 +65,7 @@ figcaption {
         font-style: normal;
     }
 }
-/* ===== GLOBAL RESET & BASE STYLES ===== */
+/* ===== GLOBAL STYLES ===== */
 * {
     margin: 0;
     padding: 0;
@@ -75,7 +75,6 @@ figcaption {
 html {
     scroll-behavior: smooth;
     font-size: 16px;
-    scroll-padding-top: 45vh;
 }
 
 body {
@@ -436,6 +435,48 @@ blockquote {
     to {
         opacity: 1;
     }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+/* ===== SCROLL HINT ===== */
+.scroll-hint {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 0.6;
+    transition: opacity var(--transition-fast);
+    z-index: 10;
+}
+
+.scroll-hint span {
+    color: var(--color-text-secondary);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+.scroll-hint i {
+    color: var(--color-accent);
+    font-size: 1.5rem;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.scroll-hint:hover {
+    opacity: 1;
 }
 
 /* ===== SCROLL REVEAL ===== */
